@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const url = 'https://random-word-api.herokuapp.com/word';
+const url = 'https://hello-rails-api.onrender.com/';
 export const getGreeting = createAsyncThunk(
   'greetings/getGreeting',
   async (thunkAPI) => {
@@ -29,7 +29,7 @@ const greetingSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(getGreeting.fulfilled, (state, action) => {
-        state.greetingMsg = action.payload;
+        state.greetingMsg = action.payload.message;
         state.isLoading = false;
       })
       .addCase(getGreeting.rejected, (state, action) => {

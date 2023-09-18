@@ -1,6 +1,6 @@
 const Home = () => (
   <div>
-    Hi from home
+    Welcome in our greeting app!
   </div>
 );
 export default Home;
