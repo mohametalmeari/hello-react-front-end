@@ -5,6 +5,7 @@ import { BurgerMenuIcon, CloseMenuIcon } from '../assets/icons';
 const links = [
   { path: '/', text: 'Home' },
   { path: '/about', text: 'About' },
+  { path: '/greeting', text: 'Greeting' },
 ];
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

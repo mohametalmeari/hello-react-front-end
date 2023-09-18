@@ -4,6 +4,7 @@ import HomePage from './routes/HomePage';
 import NotFoundPage from './routes/NotFoundPage';
 import AboutPage from './routes/AboutPage';
 import './assets/App.css';
+import GreetingPage from './routes/GreetingPage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="greeting" element={<GreetingPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
